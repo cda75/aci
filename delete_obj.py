@@ -14,7 +14,7 @@ cfg = SafeConfigParser()
 cfg.read(cfgFile)
 userName = cfg.get('AUTH', 'user')
 userPass = cfg.get('AUTH', 'password')
-apicUrl = 'https://' + cfg.get('APIC', 'url')
+apicUrl = 'https://' + cfg.get('AUTH', 'url')
 TENANT = cfg.get('APIC', 'tenant')
 APP = cfg.get('APIC', 'app')
 
